@@ -1,0 +1,278 @@
+<html>
+	<meta charset="utf-8">
+	<head>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<style>			
+			body {
+				font-family: Arial;
+				font-size: 20px;
+			}
+			.link_tracejado {
+				border: 4px dashed blue; 
+			}
+			.module {
+				font-family: 15px;
+			}
+		</style>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				// 1
+				$("#ficarTracejado").click(function(){
+					$(this).addClass("link_tracejado");
+				});
+				// 2
+				$("#ficarVermelha").mouseover(function(){
+					$(this).css("background-color","red");
+				});
+				$("#ficarVermelha").mouseout(function(){
+					$(this).css("background-color","white");
+				});
+				// 3
+				$("#botaoColocaBordaPreta").click(function(){
+					$("#p_bordaPreta1").css("border","4px black solid");
+					$("#p_bordaPreta2").css("border","4px black solid");
+				});
+				$("#botaoRemoveBordaPreta").click(function(){
+					$("#p_bordaPreta1").css("border","");
+					$("#p_bordaPreta2").css("border","");
+				});
+				// 4
+				$("#botaoEsconde").click(function(){
+					$("#p_escondemostra1").hide();
+					$("#p_escondemostra2").hide();
+				});
+				$("#botaoMostra").click(function(){
+					$("#p_escondemostra1").show();
+					$("#p_escondemostra2").show();
+				});
+				// 5
+				$("#adicionaItem").click(function(){
+					$("#adicionaItem > li").each(function(){
+						$(this).append(" item");
+					});					
+				});
+				// 6
+				$("#adicionarFimDoParagrafo").click(function(){
+					$("#p_fimdoparagrafo1").append(" fim do paragrafo");
+					$("#p_fimdoparagrafo2").append(" fim do paragrafo");							
+				});
+				// 7				
+				$("#botao_comparar").click(function(){
+					if($("#campo1").val() == $("#campo2").val()){
+						alert("Iguais..");
+					} else {
+						alert("Diferentes...");
+					}							
+				});
+				// 8				
+				$("#botao_mostreEscondeModule").click(function(){
+					$(".module").toggle();
+				});
+				// 9
+				$("#botao_conferirElementosEscondidos").click(function(){
+					alert($("p:hidden").length);
+				});
+				// 10
+				$("#botao_qtdeAtributoId").click(function(){
+					alert($("[id]").length);
+				});
+				// 11
+				$("#botao_tabelaLinhasImpares").click(function(){
+					$('table tr:even').css('background','#fff799'); 
+				});
+				// 12				
+				$("#botao_adicionar5Itens").click(function(){
+					var htmlNovosItens  = "";
+					for (var i = 0; i < 5; i++) {
+						htmlNovosItens+= "<li> Novo Item " + (i+1) +" </li>";
+					}
+					$('#myList').append(htmlNovosItens);
+				});
+				// 13				
+				$("#botao_adicionarQuarta").click(function(){
+					var novaOption = "<option> Quarta </option>";
+					$('#selectDiaDaSemana').append(novaOption);
+				});
+				// 14
+				$("#p_deslizarParaBaixo").click(function(){				
+					$(this).animate({top: '20px'});
+				});
+			});
+		</script>
+	</head>
+<body>
+
+Crie um comando que, quando o usuário clicar no link, o navegador adicione uma borda azul, com 4 pixels de espessura e que seja tracejada, esta formatação deve ser uma classe CSS do seu documento.
+
+<br>
+<br>
+<br>
+
+<b> Solução: </b> <br>
+<a id="ficarTracejado" style="text-decoration:underline; cursor:pointer;"> Ficar Tracejado </a>
+
+<hr>
+
+Construa um documento que contenha uma lista ordenada,e, toda vez que o usuário passar o mouse sobre a lista, ela receba um fundo vermelho.
+
+<br>
+<br>
+<br>
+
+<b> Solução: </b> <br>
+<ol id="ficarVermelha" style="cursor:pointer;">
+	<li>Item 1 </li>
+	<li>Item 2 </li>
+</ol>
+
+<hr>
+
+Crie um documento, com dois parágrafos, onde haja dois botões; um que adicione uma borda preta ao redor do parágrafo e outro que remova essa borda.
+
+<br>
+<br>
+<br>
+
+
+
+<b> Solução: </b> <br>
+<p id="p_bordaPreta1"> P1 </p>
+<p id="p_bordaPreta2"> P2 </p>
+<button id="botaoColocaBordaPreta"> Coloca Borda Preta </button> 
+<button id="botaoRemoveBordaPreta"> Remove Borda Preta </button> 
+
+<hr>
+
+Crie um documento com dois parágrafos e dois botões, um irá esconder os
+parágrafos e o outro irá exibi-los.
+
+<br>
+<br>
+<br>
+
+<b> Solução: </b> <br>
+<p id="p_escondemostra1"> P1 </p>
+<p id="p_escondemostra2"> P2 </p>
+<button id="botaoEsconde"> Esconde </button> 
+<button id="botaoMostra"> Mostra </button> 
+
+<hr>
+Construa uma lista ordenada e, para cada elemento, adicione ao final a palavra "item".
+
+<br>
+<br>
+<br>
+
+<b> Solução: </b> <br>
+<ol id="adicionaItem" style="cursor:pointer;">
+	<li>1</li>
+	<li>2</li>
+</ol>
+<hr>
+
+Crie dois parágrafos, e um comando que adicione, ao final de cada um, a frase: "fim do parágrafo".
+<br>
+<br>
+<br>
+
+<b> Solução: </b> <br>
+<p id="p_fimdoparagrafo1"> p1 </p>
+<p id="p_fimdoparagrafo2"> p2 </p>
+<button id="adicionarFimDoParagrafo"> Adicionar "fim do paragrafo"</button>
+<hr>
+
+Crie um formulário onde o usuário deve preencher um campo igual ao outro, e, caso não sejam iguais, o navegador deve alertá-lo; caso sejam, deverá aparecer a mensagem de que tudo foi preenchido corretamente.
+
+<br>
+<br>
+<br>
+
+<b> Solução: </b> <br>
+<input type="text" id="campo1">
+<input type="text" id="campo2">
+<button id="botao_comparar"> Comparar </button>
+<hr>
+
+Mostre e Esconde todos os elementos DIV que têm a classe "module".
+<br>
+<br>
+<br>
+
+<b> Solução: </b> <br>
+<div class="module"> Div1 </div> 
+<div class="module"> Div2 </div>
+<div class="module"> Div3 </div>
+<button id="botao_mostreEscondeModule">Esconde/Mostre</button>
+
+<hr>
+Encontre quantos elementos na página estão escondidos (dica: .length).
+<br>
+<br>
+<br>
+<b> Solução: </b> <br>
+Aqui tem 3 paragrafos escondidos...
+<p style="display: none"></p>
+<p style="display: none"></p>
+<p style="display: none"></p>
+<button id="botao_conferirElementosEscondidos"> Quantos Elementos "p" Escondidos?</button>
+
+<hr>
+Encontre quantos elementos na página têm um atributo id.
+<br>
+<br>
+<br>
+<b> Solução: </b> <br>
+<button id="botao_qtdeAtributoId"> Quantos Elementos que possuem o atributo id</button>
+
+<hr>
+Selecione todas as linhas ímpares de uma tabela.
+<br>
+<br>
+<br>
+
+<b> Solução: </b> <br>
+<table>
+	<tr> <td> Linha 1 </td> </tr>
+	<tr> <td> Linha 2 </td> </tr>
+	<tr> <td> Linha 3 </td> </tr>
+</table>
+<button id="botao_tabelaLinhasImpares">Selecionar Linhas Impares</button>	
+<hr>
+
+Adicione cinco novos itens de lista no fim da lista não ordenada #myList.
+
+<br>
+<br>
+<br>
+
+<b> Solução: </b> <br>
+<ol id="myList" style="cursor:pointer;">
+	<li>1</li>
+	<li>2</li>
+</ol>
+<button id="botao_adicionar5Itens">Adicionar 5 itens</button>	
+
+<hr>
+
+Adicione outra opção para o elemento select; dê ao option o valor "Quarta-Feira".
+
+<br>
+<br>
+<br>
+
+<b> Solução: </b> <br>
+<select id="selectDiaDaSemana">
+	<option>Segunda</option>
+	<option>Terça</option>
+</select>
+<button id="botao_adicionarQuarta">Adicionar Quarta</button>
+
+<hr>
+O parágrafo deve deslizar para baixo ao clicar.
+
+<p id="p_deslizarParaBaixo"  style="background:#98bf21;height:100px;width:100px;position:relative;cursor:pointer;"> conteudo </p>
+<br>
+<br>
+<br>
+<hr>
+</html>
