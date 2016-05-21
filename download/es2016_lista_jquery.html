@@ -51,12 +51,14 @@
 				$("#adicionaItem").click(function(){
 					$("#adicionaItem > li").each(function(){
 						$(this).append(" item");
-					});					
+					});
+					$("#adicionaItem").hide();					
 				});
 				// 6
 				$("#adicionarFimDoParagrafo").click(function(){
 					$("#p_fimdoparagrafo1").append(" fim do paragrafo");
-					$("#p_fimdoparagrafo2").append(" fim do paragrafo");							
+					$("#p_fimdoparagrafo2").append(" fim do paragrafo");
+					$("#adicionarFimDoParagrafo").hide();				
 				});
 				// 7				
 				$("#botao_comparar").click(function(){
@@ -94,6 +96,7 @@
 				$("#botao_adicionarQuarta").click(function(){
 					var novaOption = "<option> Quarta </option>";
 					$('#selectDiaDaSemana').append(novaOption);
+					$("#botao_adicionarQuarta").hide();
 				});
 				// 14
 				$("#p_deslizarParaBaixo").click(function(){				
