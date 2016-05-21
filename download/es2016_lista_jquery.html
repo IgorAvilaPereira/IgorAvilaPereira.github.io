@@ -74,7 +74,7 @@
 				});
 				// 9
 				$("#botao_conferirElementosEscondidos").click(function(){
-					alert($("p:hidden").length);
+					alert($("div > p:hidden").length);
 				});
 				// 10
 				$("#botao_qtdeAtributoId").click(function(){
@@ -218,9 +218,11 @@ Clique na lista para adicionar a palavra "item" a cada elemento: <br>
 <br>
 <b> Solução: </b> <br>
 Aqui tem 3 paragrafos escondidos...
-<p style="display: none"></p>
-<p style="display: none"></p>
-<p style="display: none"></p>
+<div id="divao">   
+	<p style="display: none"></p>
+	<p style="display: none"></p>
+	<p style="display: none"></p>
+</div>
 <button id="botao_conferirElementosEscondidos"> Quantos Elementos "p" Escondidos?</button>
 
 <hr>
