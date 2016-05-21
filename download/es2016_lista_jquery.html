@@ -51,7 +51,8 @@
 				$("#adicionaItem").click(function(){					
 					$("#adicionaItem > li").each(function(){
 						$(this).append(" item");
-					});										
+					});			
+					$("#adicionaItem").hide();							
 				});
 				// 6
 				$("#adicionarFimDoParagrafo").click(function(){
@@ -169,6 +170,7 @@ parágrafos e o outro irá exibi-los.
 <br>
 
 <b> Solução: </b> <br>
+Clique na lista para adicionar a palavra "item" a cada elemento: <br>
 <ol id="adicionaItem" style="cursor:pointer;">
 	<li>1</li>
 	<li>2</li>
