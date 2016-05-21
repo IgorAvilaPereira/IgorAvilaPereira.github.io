@@ -48,8 +48,7 @@
 					$("#p_escondemostra2").show();
 				});
 				// 5
-				$("#adicionaItem").click(function(){
-					$("#adicionaItem").hide();
+				$("#adicionaItem").click(function(){					
 					$("#adicionaItem > li").each(function(){
 						$(this).append(" item");
 					});										
@@ -91,6 +90,7 @@
 						htmlNovosItens+= "<li> Novo Item " + (i+1) +" </li>";
 					}
 					$('#myList').append(htmlNovosItens);
+					$("#botao_adicionar5Itens").hide();
 				});
 				// 13				
 				$("#botao_adicionarQuarta").click(function(){
