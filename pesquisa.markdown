@@ -1,10 +1,11 @@
 ---
 layout: page
-title: Grupos de Pesquisa
-permalink: /grupos-pesquisa/
+title: Pesquisa
+permalink: /pesquisa/
 ---
+# Pesquisa
 
-Grupos de Pesquisa
+### Grupos de Pesquisa
 
 Grupo de Pesquisa em Gerenciamento de Informações
 
