@@ -1,0 +1,59 @@
+# Site settings
+title: Prof. Igor Avila Pereira
+url: "http://igoravilapereira.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
+baseurl: "" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
+#timezone: Asia/Chongqing
+description: >
+
+# Your information
+email: igor.pereira@riogrande.ifrs.edu.br
+author: Igor Avila Pereira
+avatar: "/assets/img/profile.png"
+profile: Professor de Ensino Básico, Técnico e Tecnológico
+#twitter_username: twitter_username
+github_username:  IgorAvilaPereira
+profile_links:
+  Email: "mailto:igor.pereira@riogrande.ifrs.edu.br"
+  #GitHub: "https://github.com/IgorAvilaPereira"
+  # You can add more profile links above, or edit _includes/sidebar.html 
+
+# Comment Service (Disqus or 多说)
+#  choose one and un-comment the line to active it
+#disqus_shortname: xxx   # get one: https://disqus.com/admin/signup/
+#duoshuo_shortname: xxx  # get one: http://duoshuo.com/create-site/
+
+excerpt_separator: <!--more-->
+
+header:
+  links:             # Links on the header. Link to in-site page with a slash as prefix
+    Sobre: /sobre/
+    Ensino: /ensino/
+    Divisão de Computação: /dc/
+    Grupos de Pesquisa: /grupos-pesquisa/   
+
+permalink: /archivers/:title
+plugins:
+ - jekyll-paginate
+ - jekyll-gist
+ - jemoji
+
+# Build settings
+paginate: 5
+paginate_path: "page:num"
+
+highlighter: rouge
+markdown: kramdown
+
+# https://jekyllrb.com/docs/configuration/#precedence
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  math_engine: mathjax

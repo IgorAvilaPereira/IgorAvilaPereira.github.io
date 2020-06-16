@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Prof. Igor Avila Pereira</title>
+    <description></description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 15 Jun 2020 23:05:22 -0300</pubDate>
+    <lastBuildDate>Mon, 15 Jun 2020 23:05:22 -0300</lastBuildDate>
+    <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>tchau</title>
+        <description>
+</description>
+        <pubDate>Mon, 15 Jun 2020 18:40:19 -0300</pubDate>
+        <link>http://localhost:4000/archivers/tchau</link>
+        <guid isPermaLink="true">http://localhost:4000/archivers/tchau</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Oi</title>
+        <description>&lt;p&gt;Testando uma publicação&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2020-06-15-rocky.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 15 Jun 2020 18:40:06 -0300</pubDate>
+        <link>http://localhost:4000/archivers/oi</link>
+        <guid isPermaLink="true">http://localhost:4000/archivers/oi</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

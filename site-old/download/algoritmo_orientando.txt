@@ -1,0 +1,59 @@
+Seminários 1
+-------------------
+Instalar Latex
+Pesquisar sobre trabalhos relacionados
+Descrever de forma textual cada trabalho relacionado pesquisado
+Criar uma tabela comparativa dos trabalhos relacionados
+Descrever textualmente a tabela comparativa
+Pesquisar sobre as tecnologias e fundamentos teóricos necessários para o desenvolvimento do trabalho
+Escrever sobre cada tecnologia e fundamentos teórico
+Realizar o projeto de sistema
+Construir o caso de uso
+Construir o diagrama de classe
+Construir o diagrama er
+Descrever textualmente cada diagrama construída na etapa de análise do projeto
+Realizar um cronograma sobre o andamento/próximos passos do projeto
+Escrever a introdução
+Escrever a motivação
+Escrever o problema proposto
+Combinar todas as partes escritas no modelo latex
+Enviar para o orientador o texto
+Aguardar feedback do orientador
+Realizar as alterações
+Enviar novamente para o orientador o texto
+Aguardar um novo feedback do orientador
+Realizar novas alterações
+Criar uma apresentação de slides (pdf) resumindo tudo que foi escrito até o momento
+Enviar para o orientador a apresentação
+Aguardar feedback do orientador
+Realizar as alterações
+Enviar novamente para o orientador a apresentação
+Marcar com a orientação a prévia
+Participar do seminário de andamento
+=============================
+Seminários 2
+Iniciar o desenvolvimento do projeto
+Realizar testes
+Concluir o protótipo
+Escrever sobre a metodologia do desenvolvimento
+Escrever sobre o funcionamento do protótipo
+Escrever sobre as funcionalidades do protótipo
+Escrever sobre as dificuldades encontradas
+Escrever sobre as soluções propostas que foram utilizadas para contornar as dificuldades encontradas
+Escrever sobre trabalhos futuros: O que ficou pra fazer? O que obrigatoriamente deve ser feito e que não deu tempo... e etc...
+Escrever a conclusão
+Enviar para o orientador o texto
+Aguardar feedback do orientador
+Realizar as alterações
+Enviar novamente para o orientador o texto
+Aguardar um novo feedback do orientador
+Realizar novas alterações
+Criar uma apresentação de slides (pdf) resumindo tudo que foi escrito até o momento
+Enviar para o orientador a apresentação
+Aguardar feedback do orientador
+Realizar as alterações
+Enviar novamente para o orientador a apresentação
+Aguardar um novo feedback do orientador
+Realizar novas alterações
+Marcar com a orientação a prévia
+Defender
