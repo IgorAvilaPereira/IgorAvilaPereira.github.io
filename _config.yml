@@ -26,10 +26,11 @@ excerpt_separator: <!--more-->
 
 header:
   links:             # Links on the header. Link to in-site page with a slash as prefix
+    Posts: /  
     Sobre: /sobre/
     Ensino: /ensino/
     Divisão de Computação: /dc/
-    Grupos de Pesquisa: /grupos-pesquisa/   
+    Pesquisa: /pesquisa/   
 
 permalink: /archivers/:title
 plugins:
