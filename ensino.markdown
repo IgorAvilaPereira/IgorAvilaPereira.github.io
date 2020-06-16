@@ -4,8 +4,6 @@ title: Ensino
 permalink: /ensino/
 ---
 
-## Ensino
-
 ### 2018/1º - Disciplinas
 
 ### Desenvolvimento de Sistemas 2
