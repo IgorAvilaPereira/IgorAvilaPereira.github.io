@@ -12,7 +12,7 @@ permalink: /dc/
 
 ### Modelos Latex
 Templates de Apresentações, Modelos Latex para TCC e etc.
-GitHub
+
 
 [Github](http://github.com/dcif/tcc)
 
